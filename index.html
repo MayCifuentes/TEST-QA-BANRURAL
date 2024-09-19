@@ -53,7 +53,6 @@
 
     function checkGuess() {
       let numero = guessField.value;
-      // Verifica que el número ingresado sea entero y válido
       if (isNaN(numero) || numero  < 1 || numero > 100 || numero % 1 !== 0 ) {
         alert('Por favor, ingresa un número entero válido entre 1 y 100.');
         guessField.value = '';
